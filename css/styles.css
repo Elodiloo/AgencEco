@@ -113,8 +113,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .py_30{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .py-20 {
@@ -190,53 +189,12 @@ header {
   z-index: 2;
 }
 
-#menu {
-  display : flex ;
-  flex: 1;
-  text-align: right;
-  background-color: white;
-  position:fixed;
-  right:0;
-  z-index: 2;
-}
-
-#menu a {
-  text-decoration : none ;
-  color : black ;
-  font-weight: bold;
-  text-align: right;
-  padding: 20px;
-  align-items: flex-end;
-}
-
-#menu a:hover{
- color: green;
-}
-
-#element-personnalise a {
-  display:flex;
-  flex:1;
-  position:fixed;
-  color:green;
-  font-weight : bold;
-  font-size : 20px;
-  margin-left: 50px;
-}
-
-#menu-toggle{
-    display:none;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* banniere  */ 
 .landing_text{
     margin-top: -350px;
     margin-bottom: 200px;
     text-align : right ;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
  h1 {
@@ -248,7 +206,6 @@ a {
  h2 {
      font-size: 3.5em;
      color : white ;
-     font-weight : bold ;
  }
 
  h3 {
@@ -320,8 +277,8 @@ p {
 .image_border {
     border-radius: 50%;
     border: 5px solid #053B44;
-    margin: 10px;
     padding: 30px;
+    margin:10px;
 }
 
 #contact-form {
@@ -401,6 +358,10 @@ img {
     right: 10px;
 }
 
+.arrow:hover svg path {
+    fill: green; 
+}
+
 .slide-img {
     width: 100%;
     height: 550px;
@@ -436,12 +397,19 @@ img {
     margin-top: 50px;
 }
 
-.icones i {
-    margin-left: 10px;
+.icon-container{
+    display:flex;
+    justify-content: flex-end;
 }
 
+.icones {
+    margin-left: 15px;
+    border: 1px solid white;
+    padding: 5px; 
+    border-radius: 20%;
+}
 
-@media only screen and (max-width: 1020px) { 
+@media only screen and (min-width: 1021px) and (max-width:1260px) { 
     .navbar {
         padding:0;
     }
@@ -486,6 +454,53 @@ img {
         margin: 10px 0;
         font-size:1em;
     }
+}
+
+@media only screen and (max-width: 1020px) { 
+    .navbar {
+        padding:0;
+    }
+    
+    .navbar .logo{
+        position:absolute;
+        top: -10px;
+        left:10px;
+        font-size:0.8em;
+    }
+
+    .navbar .menu_burger{
+        display:block;
+        top:-20px;
+        right:20px;
+    }
+
+    .nav-links{
+        top:0;
+        right:0;
+        position:absolute;
+        background-color: rgba(241, 244, 237, 0.9);
+        width:50%;
+        height:45vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-right:-100%;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-links.mobile-menu{
+        margin-right:0;
+    }
+
+    .nav-links ul{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 10px 0;
+        font-size:1em;
+    }
     
     h2,
     h1{
@@ -495,10 +510,18 @@ img {
     .landing_text{
         margin-top: -250px;
         margin-bottom: 150px;
-        text-align : center ;
+        text-align : center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%)
      }
 
-     .row{
+    .centered-text{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .row{
         flex-flow:column wrap; 
         align-items: center;
      }
