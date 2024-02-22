@@ -19,12 +19,14 @@ Ce site est responsive et s'adapte donc à tous types d'écrans. :smiley_cat:
 
 ## Organisation du site web
 
-Le site s'organise est différentes sections, qui sont répertoriées dans le menu fixe.
-Il intègre une galerie d'images ainsi qu'un formulaire de contact.
+Le site s'organise est différentes sections, qui sont répertoriées dans le menu fixe (Accueil, Équipe, Services, Témoignages, Contact et Galerie).
+La page d'accueil est cliquable et envoie vers une image en 3D (VR) des bureaux de l'entreprise.
 
 ## Statut du Projet
 
-Le site est presque terminé. Il subsiste quelques dissonnances avec la maquette, surtout celle-ci :
+Le site est presque terminé. 
+Il est valide W3C : http://jigsaw.w3.org/css-validator/validator$link 
+Il subsiste quelques dissonnances avec la maquette, surtout celle-ci :
 ![Problèmes](https://i.imgur.com/6JpvFoa.png)
 
 
