@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6, p {
 .col-33{
     width: 33.33%;
 }
+
 .text-center{
     text-align: center;
 }
@@ -231,6 +232,12 @@ h6 {
 
 p {
     color: #565E65;
+}
+
+#footer1 p,
+#footer p {
+    color:white;
+    margin:0;
 }
 
 #section2 p {
@@ -590,5 +597,15 @@ img {
         flex-direction:column;
     }
 
+     #footer1 h5 {
+        font-size:small;
+        margin-bottom:0;
+        margin-top:0;
+     }
+
+     #footer1 p,
+     #footer p {
+        font-size:xx-small;
+     }
 }
     
